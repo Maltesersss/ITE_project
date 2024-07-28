@@ -33,9 +33,11 @@ body {
 }
 
 .menu img {
-    width: 180px;
+    width: 70%; /* Make the logo responsive */
+    max-width: 180px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 10px;
-    margin: 0 auto 20px;
+    margin: 0 auto 20px; /* Center and add margin */
     border: 2px solid #444;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5));
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -74,8 +76,9 @@ body {
 }
 
 .profile-img {
-    width: 100%;
-    max-width: 600px;
+    width: 100%; /* Make profile image responsive */
+    max-width: 600px; /* Limit the maximum width */
+    height: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease;
     border-radius: 10px;
     border: 5px solid #333;
@@ -120,7 +123,12 @@ h2 {
     }
 
     .menu img {
-        width: 150px;
+        width: 60%; /* Adjust width for medium devices */
+        max-width: 150px;
+    }
+
+    .profile-img {
+        max-width: 500px; /* Adjust max width for medium devices */
     }
 
     h1 {
@@ -151,7 +159,12 @@ h2 {
     }
 
     .menu img {
-        width: 120px;
+        width: 50%; /* Adjust width for smaller devices */
+        max-width: 120px;
+    }
+
+    .profile-img {
+        max-width: 400px; /* Adjust max width for smaller devices */
     }
 
     h1 {
@@ -170,7 +183,12 @@ h2 {
     }
 
     .menu img {
-        width: 100px;
+        width: 40%; /* Adjust width for very small devices */
+        max-width: 100px;
+    }
+
+    .profile-img {
+        max-width: 300px; /* Adjust max width for very small devices */
     }
 
     h1 {
